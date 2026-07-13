@@ -102,3 +102,324 @@ a{
     font-size:.88rem;
     border-radius:5px
 }
+.nav-links a:hover,.nav-links a.active{
+    background:var(--sand);
+    color:var(--green);
+}
+.nav-cta,.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    border:0;
+    cursor:pointer;
+    font:inherit;
+    font-weight:700;
+    border-radius:4px;
+    padding:13px 20px;
+    background:var(--green);
+    color:white;
+    transition:.2s
+}
+.nav-cta{
+    margin-left:10px;
+    padding:10px 13px;
+    font-size:.84rem
+}
+.btn:hover{
+    transform:translateY(-2px);
+    background:#14493f
+}
+.btn-outline{
+    border:1px solid var(--green);
+    background:transparent;
+    color:var(--green)
+}
+.btn-gold{
+    background:var(--gold);
+    color:#283c26
+}
+.menu-btn{
+    display:none;
+    background:none;
+    border:0;
+    font-size:1.5rem;
+    color:var(--green)
+}
+.hero{
+    min-height:610px;
+    color:white;
+    display:grid;
+    align-items:center;
+    background:linear-gradient(90deg,#123c3595 48%, #123c3520),url('makkah.png') center/cover
+}
+.hero-content{
+    max-width:665px;
+    padding:85px 0
+}
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-weight:700;
+    font-size:.77rem;
+    color:var(--lime)
+}
+h1,h2,h3{
+    font-family:'Playfair Display', Georgia,serif;
+    line-height:1.12;
+    margin:0 0 16px
+}
+h1{
+    font-size:clamp(2.7rem,6vw,5rem)
+}
+h2{
+    font-size:clamp(2rem,3.6vw,3.25rem)
+}
+h3{
+    font-size:1.42rem
+}
+.hero p{
+    font-size:1.1rem;
+    max-width:570px
+}
+.hero-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:28px
+}
+.section{
+    padding:82px 0
+}
+.section-heading{
+    max-width:680px;
+    margin-bottom:38px
+}
+.section-heading p{
+    color:var(--muted);
+    margin:0
+}
+.notice{
+    background:var(--lime);
+    padding:18px 0;
+    color:#24443b
+}
+.notice .container{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    justify-content:space-between
+}
+.notice strong{
+    font-family:'Playfair Display',serif;
+    font-size:1.2rem
+}
+.notice a{
+    text-decoration:underline;
+    font-weight:bold;
+    white-space:nowrap
+}
+.prayer-strip{
+    margin-top:-65px;
+    position:relative;
+    z-index:2
+}
+.prayer-card{
+    background:white;
+    box-shadow:var(--shadow);
+    padding:25px;
+    display:grid;
+    grid-template-columns:1.35fr repeat(5,1fr);
+    align-items:center
+}
+.prayer-card>div{
+    padding:6px 16px;
+    border-right:1px solid #e7e5db
+}
+.prayer-card>div:last-child{
+    border:0
+}
+.prayer-card small{
+    display:block;
+    text-transform:uppercasse;
+    letter-sacing:.1em;
+    color:var(--muted);
+    font-weight:700;
+    font-size:.67rem
+}
+.prayer-card strong{
+    font-size:1.12rem
+}
+.prayer-card .today{
+    font-family:'Playfair Display';
+    font-size:1.3rem;
+    color:var(--green)
+}
+.two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center
+}
+.rounded{
+    border-radius:3px
+}
+.image-frame{
+    position:relative
+}
+.image-frame img{
+    width:100%;
+    height:450px;
+    object-fit:cover
+}
+.image-tag{
+    position:absolute;
+    bottom:22px;
+    left:-18px;
+    background:var(--lime);
+    padding:15px 21px;
+    font-weight:700
+}
+.feature-grid,.card-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px
+}
+.feature{
+    background:white;
+    padding:27px;
+    box-shadow:0 4px 15px #19363008
+}
+.feature-icon{
+    font-size:1.6rem;
+    color:var(--green);
+    margin-bottom:13px
+}
+.feature p,.card p{
+    color:var(--muted);
+    font-size:.95rem
+}
+.soft{
+    background:var(--sand)
+}
+.schedule-cta{
+    background:var(--green);
+    color:white;
+    padding:45px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px
+}
+.schedule-cta h2{
+    font-size:2rem
+}
+.schedule-cta p{
+    margin:0;
+    color:#dce8d9
+}
+.page-hero{
+    padding:80px 0;
+    background:linear-gradient(120deg,#123c35,#287064);
+    color:white
+}
+.page-hero p{
+    max-width:650px;
+    color:#e1e9dc
+}
+.crumb{
+    font-size:.86rem;
+    color:var(--lime);
+    margin-bottom:10px
+}
+.info-banner{
+    border-left:5px solid var(--gold);
+    background:#fff8e7;
+    padding:18px 21px;
+    margin:0 0 30px
+}
+.tabs{
+    display:flex;
+    gap:8px;
+    margin-bottom:24px;
+    flex-wrap:wrap
+}
+.tab{
+    border:1px solid #c7d0c6;
+    background:white;
+    padding:10px 15px;
+    border: radius 3pxl;
+    cursor:pointer;
+    font:inherit;
+    font-weight:600;
+    color:var(--green)
+}
+.tab.active{
+    background:var(--green);
+    color:white
+}
+.schedule-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:var(--shadow)
+}
+.schedule-table th{
+    background:var(--green);
+    color:white;
+    text-align:left;
+    padding:15px
+}
+.schedule-table td{
+    padding:16px;
+    border-bottom:1px solid #e8e8df
+}
+.schedule-table tr:last-child td{
+    border:0
+}
+.schedule-table .highlight td{
+    background: #f1f7d9;
+    font-weight:700
+}
+.class-card{
+    background:#fff;
+    box-shadow:var(--shadow);
+    overflow:hidden
+}
+.class-card img{
+    height:210px;
+    width:100%;
+    object-fit:cover
+}
+.class-card-content{
+    padding:23px
+}
+.class-meta{
+    color:var(--green);
+    font-size:.84rem;
+    font-weight:700
+}
+.badge{
+    background:var(--lime);
+    color:#29483a;
+    border-radius:999px;
+    padding:4px 9px;
+    font-size:.7rem;
+    font-weight:700;
+    float:right
+}
+.form-wrap{
+    background:white;
+    box-shadow:var(--shadow);
+    padding:38px
+}
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px
+}
+.field{
+    display:flex;
+    flex-direction:column;
+    gap:5px
+}
