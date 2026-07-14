@@ -165,7 +165,7 @@ a{
     color:var(--lime)
 }
 h1,h2,h3{
-    font-family:'Playfair Display', Georgia,serif;
+    font-family:'Playfair Display',Georgia,serif;
     line-height:1.12;
     margin:0 0 16px
 }
@@ -229,7 +229,7 @@ h3{
     box-shadow:var(--shadow);
     padding:25px;
     display:grid;
-    grid-template-columns:1.35fr repeat(5,1fr);
+    grid-template-columns:1.3fr repeat(5,1fr);
     align-items:center
 }
 .prayer-card>div{
@@ -241,8 +241,8 @@ h3{
 }
 .prayer-card small{
     display:block;
-    text-transform:uppercasse;
-    letter-sacing:.1em;
+    text-transform:uppercase;
+    letter-spacing:.1em;
     color:var(--muted);
     font-weight:700;
     font-size:.67rem
@@ -348,7 +348,7 @@ h3{
     border:1px solid #c7d0c6;
     background:white;
     padding:10px 15px;
-    border: radius 3pxl;
+    border-radius:3px;
     cursor:pointer;
     font:inherit;
     font-weight:600;
@@ -394,6 +394,14 @@ h3{
 .class-card-content{
     padding:23px
 }
+.class-tools{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    background:var(--sand);
+    padding:20px;
+    margin:0 0 25px
+}
 .class-meta{
     color:var(--green);
     font-size:.84rem;
@@ -422,4 +430,47 @@ h3{
     display:flex;
     flex-direction:column;
     gap:5px
+}
+.field.full{
+    grid-column:1/-1
+}
+label{
+    font-weight:700;
+    font-size:.88rem
+}
+input,select,textarea{
+    padding:12px;
+    border:1px solid #c7d0c6;
+    border-radius:3px;
+    font:inherit;
+    color:var(--ink);
+    background:#fff
+}
+input:focus,select:focus,textarea:focus{
+    outline:3px solid #c9dc8370;
+    border-color:var(--green)
+}
+textarea{
+    min-height:120px;
+    resize:vertical
+}
+.error{
+    color:var(--red);
+    font-size:.8rem;
+    display:none
+}
+.form-message{
+    display:none;
+    margin-top:18px;
+    padding:13px;
+    border-radius:3px;
+    background:#e9f4e4;
+    color:#245841;
+    font-weight:600
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:220px;
+    gap:13px
 }
