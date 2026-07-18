@@ -523,5 +523,121 @@ video{
     background:#183c35
 }
 .video iframe{
-    widt
+    width:100%;
+    height:100%;
+    border:0
+}
+.event-date{
+    font-weight:bold;
+    color:var(--green);
+    font-size:.82rem;
+    text-transform:uppercase;
+    letter-spacing:.08em
+}
+.contact-grid{
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:35px
+}
+.contact-details{
+    background:var(--green);
+    color:white;
+    padding:38px
+}
+.contact-details p{
+    color:#dfebdc
+}
+.contact-item{
+    border-bottom:1px solid #ffffff2e;
+    padding:15px 0
+}
+.map{
+    min-height:360px;
+    border:0;
+    width:100%
+}
+.quote{
+    font-family:'Playfair Display';
+    font-size:1.55rem
+}
+.stars{
+    color:var(--gold);
+    letter-spacing:2px
+}
+.footer{
+    background:#102f2a;
+    color:#dce7d8;
+    padding:60px 0 0
+}
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr 1.15fr;
+    gap:35px
+}
+.footer h4{
+    font-family:'Playfair Display';
+    color:white;
+    font-size:1.2rem;
+    margin:0 0 15px
+}
+.footer a{
+    display:block;
+    color:#bfcfc8;
+    font-size:.9rem;
+    margin:8px 0
+}
+.footer a:hover{
+    color:var(--lime)
+}
+.socials{
+    display:flex;
+    gap:8px
+}
+.socials a{
+    width:34px;
+    height:34px;
+    border:1px solid #ffffff45;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    margin:0
+}
+.footer-bottom{
+    margin-top:40px;
+    padding:17px 0;
+    border-top:1px solid #ffffff22;
+    font-size:.78rem;
+    color:#aabdb5;
+    display:flex;
+    justify-content:space-between;
+    gap:15px
+}
+.back-top{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    background:var(--green);
+    color:white;
+    border:0;
+    border-radius:50%;
+    width:42px;
+    height:42px;
+    cursor:pointer;
+    display:none;
+    z-index:10
+}
+.back-top.sshow{
+    display:block
+}
+@media(max-width:850px){
+    .menu-btn{display:block}
+    .nav-links{display:none;position:absolute;top:80px;left:0;right:0;background:var(--cream);box-shadow:var(--shadow);padding:14px;flex-direction:column;align-items:stretch}
+    .nav-links.open{display:flex}
+    .nav-links a,.nav-cta{margin:0}
+    .prayer-card{grid-template-columns:repeat(3,1fr)}
+    .prayer-card>div:first-child{grid-column:1/-1}
+    .two-col,.contact-grid{grid-template-columns:1fr;gap:32px}
+    .feature-grid,.card-grid{grid-template-columns:1fr 1fr}
+    .footer-grid{grid-template-columns:1fr 1fr}
+    .gallery{grid-auto-rows:170px}
 }
