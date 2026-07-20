@@ -478,7 +478,7 @@ textarea{
     height:100%;
     width:100%;
     object-fit:cover;
-    curosr:pointer;
+    cursor:pointer;
     transition:.25s
 }
 .gallery img:hover{
@@ -517,15 +517,6 @@ textarea{
     color:white;
     font-size:2.4rem;
     cursor:pointer
-}
-video{
-    aspect-ratio:16/9;
-    background:#183c35
-}
-.video iframe{
-    width:100%;
-    height:100%;
-    border:0
 }
 .event-date{
     font-weight:bold;
@@ -640,4 +631,28 @@ video{
     .feature-grid,.card-grid{grid-template-columns:1fr 1fr}
     .footer-grid{grid-template-columns:1fr 1fr}
     .gallery{grid-auto-rows:170px}
+}
+@media(max-width:500px){
+    .topbar{display:none}
+    .nav{height:70px}
+    .nav-links{top:69px}
+    .brand{font-size:.9rem}
+    .brand-mark{width:38px;height:38px}
+    .hero{min-height:560px}
+    .hero-content{padding:55px 0}
+    .prayer-strip{margin-top:0}
+    .prayer-card{grid-template-columns:1fr 1fr;padding:15px}
+    .prayer-card>div{padding:9px 7px}
+    .section{padding:54px 0}
+    .feature-grid,.card-grid,.footer-grid,.form-grid,.class-tools{grid-template-columns:1fr}
+    .field.full{grid-column:auto}
+    .schedule-cta,.notice .container{align-items:flex-start;flex-direction:column}
+    .schedule-table{font-size:.82rem}
+    .schedule-table th,.schedule-table td{padding:11px 8px}
+    .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:135px}
+    .gallery .wide{grid-column:span 2}
+    .image-frame img{height:330px}
+    .footer-bottom{flex-direction:column}
+    .page-hero{padding:55px 0}
+    .form-wrap{padding:25px 20px}
 }
