@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const savedColorMode = localStorage.getItem('colourMode');
+    const savedColourMode = localStorage.getItem('colourMode');
     if (savedColourMode === 'colourblind') document.body.classList.add('colourblind-mode');
 
     const colourToggle = document.createElement('button');
-    colourToggle.classNmae = 'colour-toggle';
+    colourToggle.className = 'colour-toggle';
     colourToggle.type = 'button';
     colourToggle.setAttribute('aria-pressed', document.body.classList.contains('colourblind-mode'));
     colourToggle.innerHTML = '<span aria-hidden="true">◐</span> Colour-blind view';
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => top?.classList.toggle('show',scrollY > 350));
     top?.addEventListener('click',() => scrollTo({ top: 0,behavior:'smooth'}));
 
-    document.querySelectorAll('[data-tabs').forEach((box) => {
-        const tabs = box.querySelectorAll('.tabs');
-        const rows = box.querySelectorAll('tbody [data-day');
+    document.querySelectorAll('[data-tabs]').forEach((box) => {
+        const tabs = box.querySelectorAll('.tab');
+        const rows = box.querySelectorAll('tbody [data-day]');
         tabs.forEach((tab) => tab.addEventListener('click', () => {
             tabs.forEach((item) => item.classList.remove('active'));
             tab.classList.add('active');
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const classFilter = document.querySelector('#class-filter');
     if (classFilter) {
-        const classCards = document.querySelectorAll('[data-class-level');
+        const classCards = document.querySelectorAll('[data-class-level]');
         classFilter.addEventListener('change', () => {
             classCards.forEach((card) => {
                 card.hidden = classFilter.value !== 'all' && card.dataset.classLevel !== classFilter.value;
