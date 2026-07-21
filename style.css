@@ -617,9 +617,46 @@ textarea{
     display:none;
     z-index:10
 }
-.back-top.sshow{
+.back-top.show{
     display:block
 }
+.colour-toggle{
+    position:fixed;
+    right:18px;
+    bottom:70px;
+    z-index:20;
+    border:2px solid var(--green);
+    border-radius:999px;
+    padding:9px 13px;
+    background:white;
+    color:var(--green);
+    box-shadow:var(--shadow);
+    font:inherit;
+    font-size:.82rem;
+    font-weight:700;
+    cursor:pointer
+}
+.colour-toggle:hover,.colour-toggle:focus-visible{
+    background:var(--sand);
+    outline:3px solid #f4c542
+}
+body.colourblind-mode{
+    --ink:#102a43;
+    --green:#075985;
+    --lime:#f4b942;
+    --cream:#f7f9fc;
+    --sand:#e8eef5;
+    --gold:#e87817;
+    --muted:#40566a;
+    --red:#9c2c2c;
+    --shadow:0 14px 35px #102a431c
+}
+body.colourblind-mode .topbar,body.colourblind-mode .footer{background:#102a43}
+body.colourblind-mode .hero{background:linear-gradient(90deg,#102a43ec 5%,#075985a8 48%,#102a4320),url('https://images.unsplash.com/photo-1508009603885-50cf7c8dd0f3?auto=format&fit=crop&w=1800&q=85') center/cover}
+body.colourblind-mode .btn-gold{background:#e87817;color:#102a43}
+body.colourblind-mode .tab.active,body.colourblind-mode .schedule-table th{background:#075985}
+body.colourblind-mode .highlight td{background:#fff3ce}
+body.colourblind-mode .colour-toggle{border-color:#075985;color:#075985}
 @media(max-width:850px){
     .menu-btn{display:block}
     .nav-links{display:none;position:absolute;top:80px;left:0;right:0;background:var(--cream);box-shadow:var(--shadow);padding:14px;flex-direction:column;align-items:stretch}
@@ -655,4 +692,5 @@ textarea{
     .footer-bottom{flex-direction:column}
     .page-hero{padding:55px 0}
     .form-wrap{padding:25px 20px}
+    .colour-toggle{bottom:68px;right:12px;padding:8px 11px}
 }
