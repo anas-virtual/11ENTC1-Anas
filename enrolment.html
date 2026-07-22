@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrolment | Macquarie Fields Musallah</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="nav">
@@ -58,6 +59,11 @@
                                 <span class="error">Please enter an age.</span>
                             </div>
                             <div class="field">
+                                <label for="age">Student age *</label>
+                                <input id="age" type="number" min="4" max="99" required>
+                                <span class="error">Please enter an age.</span>
+                            </div>
+                            <div class="field">
                                 <label for="class">Preferred class *</label>
                                 <select id="class" required>
                                     <option value="">Choose a class</option>
@@ -70,26 +76,53 @@
                             <div class="field">
                                 <label for="phone">Phone number *</label>
                                 <input id="phone" type="tel" required>
-                                <span class="error">Please chooses a class.</span>
+                                <span class="error">Please enter a phone number.</span>
                             </div>
                             <div class="field full">
                                 <label for="notes">Anything we should know? (optional)</label>
-                                <textarea id="notes" placeholder="Learning needs, prior experience, or a question for our teachers">
+                                <textarea id="notess" placeholder="Learning needs, prior experience, or a question for our teachers">
                                 </textarea>
                             </div>
                         </div>
                         <button class="btn" style="margin-top:22px" type="submit">Send enrolment request</button>
-                        <div class="container footer-grid">
-                            <div>
-                                <h4>Quick links</h4>
-                                <a href="prayer-times.html">Prayer times</a>
-                                <a href="quran-classes.html">Quran classes</a>
-                            </div>
-                        </div>
+                        <div class="form-message" role="status">Thank you - your enrolment has been recieved. We'll be in touch soon, In sha allah.</div>
                     </form>
             </div>
         </section>
     </main>
-    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Macquarie Fields Musallah</h4>
+                <p>A local place for prayer, learning and connection.</p>
+            </div>
+            <div>
+                <h4>Quick links</h4>
+                <a href="prayer-times.html">Prayer times</a>
+                <a href="quran-classes.html">Quran classes</a>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+            <div>
+                <h4>Visit us</h4>
+                <p>50 Saywell Road<br>Macquarie Fields NSW 2564</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/p/Islamic-Education-Centre-Inc-100068635358293/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/p/DXOw4TwEh6K/" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/watch?v=nM-aJWeFFoo" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>&copy 2026 Macquarie Fields Musallah.</span>
+            <span>Prayer · Learning · Community</span>
+        </div>
+    </footer>
+    <button class="back-top">↑</button>
+    <script src="script.js">
+    </script> 
 </body>
 </html>
