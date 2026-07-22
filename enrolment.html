@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolment | Macquarie Fields Musallah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <span clas="brand-mark">📿</span>
+                <span>Macquarie Fields<small>Musallah</small>
+                </span>
+            </a>
+            <button class="menu-btn" aria-label="Open menu">≡</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="prayer-times.html">Prayer Times</a>
+                <a href="quran-classes.html">Quran classess</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a class="nav-cta active" href="enrolment.html">Enrol now</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="crumb">Home / Enrolment</div>
+                <h1>Begin your Quran journey.</h1>
+                <p>Complete this form to request a place. Our team will contact you to confirm availability and the procedures.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container" style="max-width:850px">
+                <div class="info-banner">
+                    <strong>Before you enrol:</strong> please review class days and age groups. Enrolment is required before attending any Quran classes.</div>
+                    <form class="form-wrap" data-validate novalidate>
+                        <h2>Class enrolment form</h2>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="parent">Parent / guardian name *</label>
+                                <input id="parent" required>
+                                <span class="error">Pleae enter your name.</span>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email address *</label>
+                                <input id="email" type="email" required>
+                                <span class="error">Enter a valid email address.</span>
+                            </div>
+                            <div class="field">
+                                <label for="student">Student name *</label>
+                                <input id="age" type="number" min="4" max="99" required>
+                                <span class="error">Please enter an age.</span>
+                            </div>
+                            <div class="field">
+                                <label for="class">Preferred class *</label>
+                                <select id="class" required>
+                                    <option value="">Choose a class</option>
+                                    <option>Little Learners (5-9)</option>
+                                    <option>Growing Readers (10-16)</option>
+                                    <option>Adult Foundations</option>
+                                </select>
+                                <span class="error">Please choose a class.</span>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone number *</label>
+                                <input id="phone" type="tel" required>
+                                <span class="error">Please chooses a class.</span>
+                            </div>
+                            <div class="field full">
+                                <label for="notes">Anything we should know? (optional)</label>
+                                <textarea id="notes" placeholder="Learning needs, prior experience, or a question for our teachers">
+                                </textarea>
+                            </div>
+                        </div>
+                        <button class="btn" style="margin-top:22px" type="submit">Send enrolment request</button>
+                        <div class="container footer-grid">
+                            <div>
+                                <h4>Quick links</h4>
+                                <a href="prayer-times.html">Prayer times</a>
+                                <a href="quran-classes.html">Quran classes</a>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
